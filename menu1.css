@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.header i {
+    margin-left: -80px;
+    padding-top: 7px;
+}
+
+.header h1 {
+    font-family: shrikhand;
+}
+
+.main-img {
+    width: 1200px;
+    height: 500px;
+    margin-left: 120px;
+}
+
+.bastille-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.entrees {
+    margin-top: 20px;
+}
+
+.main-dish {
+    margin-top: 40px;
+}
+
+.desserts {
+    margin-top: 40px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    width: 300px;
+    height: 55px;
+    margin-top: 15px;
+    padding-top: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: #FF79DA;
+}
+
+.card h3 {
+    font-size: 15px;
+}
+
+.descriptionandprice {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.descriptionandprice h4 {
+    font-size: 12px;
+}
+
+.menu {
+    border-radius: 10px;
+    width: 1200px;
+    height: 600px;
+    margin-left: 120px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-containermaindish {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-containerdessert {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    
+}
+
+.search-btn {
+    background-color: #FF79DA;
+    color: white;
+    font-size: 16px;
+    border-right: 1px;
+    border-top: 0px;
+    border-radius: 30px;
+    height: 40px;
+    width: 140px;
+    
+}
+
+footer {
+    background-color: #454242;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+
+footer a:hover {
+    color: #ff79da;
+}
+
+.footer-main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.footer-logo {
+    padding-bottom: 20px;
+}
+
+.footer-row1 {
+    padding-bottom: 15px;
+}
+
+.footer-row2 {
+    padding-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+.menu {
+    border-radius: 10px;
+    width: 320px;
+    height: 1000px;
+    margin-left: 0px;
+}
+
+.card-container {
+    display: block;
+    flex-direction: column;
+}
+
+.card-containermaindish {
+    display: block;
+    flex-direction: column;
+}
+
+.card-containerdessert {
+    display: block;
+    flex-direction: column;
+}
+
+.main-img {
+    width: 320px;
+    height: 250px;
+    margin-left: 0px;
+}
+}
