@@ -7,13 +7,13 @@
 
 .logo {
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 40%;
     margin-bottom: 8px;
 }
 
 .location {
     display: flex;
-    padding-left: 99px;
+    padding-left: 40%;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #e6e6e6;
@@ -37,12 +37,14 @@
 .text-box h2 {
     padding-bottom: 40px;
     padding-top: 20px;
+    margin-left: -70px;
     font-size: 32px;
 }
 
 .text-box p {
     padding-bottom: 30px;
     font-size: 19px;
+    margin-left: -112px;
 }
 
 .explore-btn {
@@ -56,6 +58,7 @@
     background-color: #ff79da;
     cursor: pointer;
     margin-bottom: 40px;
+    margin-left: -90px;
 }
 
 .explore-btn:hover {
@@ -73,7 +76,7 @@
 
 .howitworks h2 {
     font-size: 33px;
-    margin-left: 128px;
+    margin-left: 70px;
 }
 
 .small-card1 {
@@ -91,7 +94,7 @@
 
 .small-card1 i.fa-circle {
     color: #9356dc;
-    margin-left: -8px;
+    margin-left: -2%;
     
 }
 
@@ -109,6 +112,8 @@
 }
 
 .small-card2 {
+    display: flex;
+    flex-direction: row;
     width: 350px;
     height: 100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -116,21 +121,60 @@
     border-radius: 20px;
     background-color: #f1f1f1;
     margin-right: 50px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.no-2 {
+    position: absolute;
+    left: 83px;
+    color: white;
+}
+
+.small-card2 i.fa-circle {
+    color: #9356dc;
+    margin-left: -2%;
+    padding-right: 13px;
+}
+
+.menu-icon {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.no-3 {
+    position: absolute;
+    left: 85px;
+    color: white;
 }
 
 .small-card3 {
+    display: flex;
+    flex-direction: row;
     width: 350px;
     height: 100px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 20px;
     background-color: #f1f1f1;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.small-card3 i.fa-circle {
+    color: #9356dc;
+    margin-right: 13px;
+    margin-left: -5px;
+}
+
+.small-card3 i.fa-store {
+    color: #9356dc;
+    padding-right: 5%;
 }
 
 .smallcards {
-    display: flex;
-    margin-left: -240px;
-    margin-top: 70px;
+    margin-left: 85px;
+    margin-top: 2%;
     
 }
 
@@ -138,13 +182,14 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    width: 480px;
-    height: 315px;
+    width: 380px;
+    height: 325px;
+    margin-bottom: 20px;
 }
 
 .card img {
     width: 100%;
-    height: 80%;
+    height: 75%;
     border-radius: 5px 5px 0 0;
 }
 
@@ -154,18 +199,16 @@
 }
 
 .container {
-    margin-top: 550px;
-    margin-left: 220px;
+    margin-top: 720px;
+    margin-left: 35%;
 }
 
 .justcards {
-    display: flex;
-    flex-flow: row wrap;
     background-color: #f1f1f1;
-    height: 680px;
-    width: 1000px;
-    justify-content: space-around;
-    padding-top: 30px;
+    height: 1390px;
+    width: 390px;
+    padding-top: 10px;
+    padding-left: 1%;
 }
 
 footer {
@@ -205,12 +248,25 @@ footer a:hover {
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .logo {
-        margin-left: 98px;
+        margin-left: 28%;
         margin-bottom: 5px;
+    }
+
+    .location {
+        padding-left: 28%;
+    }
+
+    .text-box h2 {
+        margin-left: 5%;
+    }
+
+    .text-box p {
+        margin-left: 1%;
     }
 
     .explore-btn {
         font-size: 17px;
+        margin-left: 6%;
     }
 
     .howitworks h2 {
@@ -233,7 +289,7 @@ footer a:hover {
     }
 
     .container {
-        margin-top: 820px;
+        margin-top: 770px;
         margin-left: 1px;
     }
 
@@ -253,7 +309,7 @@ footer a:hover {
     .justcards {
         width: 415px;
         height: 800px;
-        gap: 25px;
+        padding-left: 2%;
     }
 
     footer {
@@ -264,6 +320,16 @@ footer a:hover {
         position: absolute;
         left: -94px;
         padding-top: 1px;
+    }
+
+    .no-2 {
+        position: absolute;
+        left: -93px;
+    }
+
+    .no-3 {
+        position: absolute;
+        left: -89px;
     }
 
 }
