@@ -62,8 +62,8 @@
 }
 
 .explore-btn:hover {
-    border: 1px solid #9356dc;
-    background: #9356dc;
+    background: #ff79da;
+    mix-blend-mode: lighten;
     transition: 1s;
 }
 
@@ -193,11 +193,6 @@
     border-radius: 5px 5px 0 0;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    color: #ff79da;
-}
-
 .container {
     margin-top: 720px;
     margin-left: 35%;
@@ -244,6 +239,82 @@ footer a:hover {
 .footer-row2 {
     padding-bottom: 15px;
 }
+
+.new {
+   background: lightgreen;
+   color: darkgreen;
+   width: 65px;
+   height: 25px;
+   text-align: center;
+   position: relative;
+   top: -230px;
+   right: -295px;
+}
+
+.heart, .purpleheart {
+    position: relative;
+    right: -335px;
+    top: -20px;
+}
+
+.fa-heart-o {
+    cursor: pointer;
+}
+
+.fa-heart-o:hover::before {
+    opacity: 1;
+  }
+
+  .fa-heart-o::before {
+    content: "";
+    opacity: 0;
+    transition: 0.5s;
+    background: linear-gradient(180deg, #9356DC 10%, #FF79DA 60%);
+    height: 100%;
+    width: 100%;
+  }
+
+  .fa-heart-o:hover {
+    opacity: 1;
+    -webkit-animation: fill 1s ease-in-out both;
+    animation: fill 1s ease-in-out both;
+  }
+
+  @-webkit-keyframes fill {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.7;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fill {
+    0% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.7;
+    }
+    60% {
+      opacity: 0.4;
+    }
+    70% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
@@ -301,10 +372,6 @@ footer a:hover {
         height: 315px;
     }
 
-    .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        color: #ff79da;
-    }
 
     .justcards {
         width: 415px;

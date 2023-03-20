@@ -54,6 +54,55 @@
     height: 55px;
     margin-top: 15px;
     padding-top: 5px;
+    animation: fadein-bottom 2.5s ease-in-out both;;
+}
+
+@-webkit-keyframes fadein-bottom {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadein-bottom {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card:hover .item-select {
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+
+.card:hover .fa-check-circle {
+  -webkit-animation: check 0.5s ease forwards;
+  animation: check 0.5s ease forwards;
+}
+
+@-webkit-keyframes check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .card h3 {
@@ -62,7 +111,7 @@
 
 .descriptionandprice {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 10px;
 }
 
@@ -134,8 +183,11 @@ footer a:hover {
     border-radius: 5px;
     position: absolute;
     top: 66.2%;
-    right: 64.9%;
+    right: 64.9%;  
 }
+
+
+
 
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
@@ -165,7 +217,25 @@ footer {
 }
 
 .bastille-row {
-    margin-left: 2%;
+    margin-left: 3%;
+}
+
+.entrees {
+    margin-left: 3%;
+}
+
+.main-dish {
+    margin-left: 3%;
+}
+
+.desserts {
+    margin-left: 3%;
+}
+
+.check-mark {
+    position: absolute;
+    top: 36.4%;
+    right: 1%;
 }
 
 }
