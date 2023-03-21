@@ -182,8 +182,8 @@ footer a:hover {
     padding-top: 20px;
     border-radius: 5px;
     position: absolute;
-    top: 66.2%;
-    right: 64.9%;  
+    top: 1%;
+    right: -1%;  
 }
 
 
@@ -234,8 +234,8 @@ footer {
 
 .check-mark {
     position: absolute;
-    top: 36.4%;
-    right: 1%;
+    top: 1%;
+    right: -1%;
 }
 
 }

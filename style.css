@@ -280,42 +280,6 @@ footer a:hover {
     animation: fill 1s ease-in-out both;
   }
 
-  @-webkit-keyframes fill {
-    0% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 0.7;
-    }
-    60% {
-      opacity: 0.4;
-    }
-    70% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes fill {
-    0% {
-      opacity: 1;
-    }
-    30% {
-      opacity: 0.7;
-    }
-    60% {
-      opacity: 0.4;
-    }
-    70% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-
 
 @media only screen and (max-width: 600px) and (min-width: 400px) {
     .logo {
