@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&family=Shrikhand&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -412,6 +411,9 @@ footer a:hover {
   }
 
 
+  
+  /*TABLET*/ 
+
   @media only screen and (max-width: 991px) and (min-width: 768px) {
     .text-box {
         margin-top: 18%;
@@ -459,7 +461,8 @@ footer a:hover {
     }
   }
 
-  @media only screen and (min-width: 992px) {
+  
+@media only screen and (max-width: 1281px)and (min-width: 992px) {
     .text-box {
         margin-top: 16%;
         width: 90%;
@@ -516,7 +519,4 @@ footer a:hover {
         width: 90%;
         margin-left: 5%;
     }
-
-    
-
   }
