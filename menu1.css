@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    margin-left: 35%;
+    margin-left: 10%;
 }
 
 .header {
@@ -37,7 +37,7 @@ header {
 .main-img {
     width: 400px;
     height: 250px;
-    margin-left: 35%;
+    margin-left: 5%;
 }
 
 .bastille-row {
@@ -48,14 +48,29 @@ header {
 
 .entrees {
     margin-top: 20px;
+    border: solid 2px #99e2d0;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 70px;
 }
 
 .main-dish {
     margin-top: 40px;
+    border: solid 2px #99e2d0;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 85px;
 }
 
 .desserts {
     margin-top: 40px;
+    border: solid 2px #99e2d0;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    width: 75px;
 }
 
 .card {
@@ -79,37 +94,48 @@ header {
     opacity: 1;
   }
 }
-@keyframes fadein-bottom {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
 .card:hover {
-  transform: translateX(0%);
-  transition: 0.5s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
-.card:hover .fa-check-circle {
-  -webkit-animation: check 0.5s ease forwards;
-  animation: check 0.5s ease forwards;
+.card:hover, .check-mark {
+    opacity: 1;
+    -webkit-animation: 1s linear 0s slide;
+    animation: 1s linear 0s slide;
 }
 
+@keyframes slide {
+    0% {
+        background: transparent;
+    }
 
-@-webkit-keyframes check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+    25% {
+        background-image: linear-gradient(to left,
+                  #99e2d0 10%,
+                  transparent 20%);
+    }
+
+    50% {
+        background-image: linear-gradient(to left,
+                  #99e2d0 12%,
+                  transparent 20%);
+    }
+
+    75% {
+        background-image: linear-gradient(to left,
+                  #99e2d0 17%,
+                  transparent 20%);
+    }
+
+     75% {
+        background-image: linear-gradient(to left,
+                  #99e2d0 20%,
+                  transparent 20%);
+    }
 }
-
 
 .card h3 {
     font-size: 15px;
@@ -130,7 +156,7 @@ header {
     border-radius: 10px;
     width: 1200px;
     height: 600px;
-    margin-left: 35%;
+    margin-left: 5%;
 }
 
 .search-btn {
@@ -148,9 +174,9 @@ header {
 footer {
     background-color: #454242;
     color: white;
-    margin-top: 25%;
-    width: 28%;
-    margin-left: 34%;
+    margin-top: 90%;
+    width: 100%;
+    margin-left: 0%;
 }
 
 footer a {
@@ -181,8 +207,7 @@ footer a:hover {
     padding-bottom: 15px;
 }
 
-.check-mark, .fa-check-circle {
-    background: #99E2D0;
+.check-mark {
     height: 55px;
     width: 46px;
     color: white;
@@ -190,13 +215,26 @@ footer a:hover {
     padding-top: 20px;
     border-radius: 5px;
     position: absolute;
-    top: 1%;
-    right: -1%;  
+    top: -2px;
+    right: -1%; 
+    
 }
+
+@-webkit-keyframes check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .card-containerdessert {
     margin-bottom: 5%;
 }
+
+
 
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -232,7 +270,7 @@ footer a:hover {
 
     .menu {
         margin-top: 5%;
-        margin-left: 1%;
+        margin-left: 10%;
     }
 
     .card-container, .card-containermaindish, .card-containerdessert {
