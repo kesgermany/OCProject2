@@ -220,7 +220,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 1281px) and (min-width: 992px) {
     header {
         margin-left: 30%;
     }
