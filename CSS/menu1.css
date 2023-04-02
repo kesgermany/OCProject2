@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 10px;
-    width: 380px;
+    width: 100%;
 }
 
 .header i {
@@ -177,13 +177,20 @@ body {
 
 .card-description {
     width: 90%;
-    padding: 15px 25px;
+    padding: 15px 15px;
 }
 
 .card-description p {
     font-weight: 400;
     width: 100%;
     font-size: 12px;
+}
+
+.card-description h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: normal;
 }
 
 .card:hover .card-description {
