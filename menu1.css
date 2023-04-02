@@ -81,7 +81,8 @@ header {
     height: 55px;
     margin-top: 15px;
     padding-top: 5px;
-    animation: fadein-bottom 2.5s ease-in-out both;;
+    animation: fadein-bottom 2.5s ease-in-out both;
+    overflow: hidden;
 }
 
 @-webkit-keyframes fadein-bottom {
@@ -95,47 +96,49 @@ header {
   }
 }
 
+.check-mark {
+    background: #99e2d0;
+    height: 55px;
+    width: 46px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: -2px;
+    right: -1%; 
+    transform: translateX(100%);
+}
+
+.price h4 {
+    transform: translateX(100%);
+}
+
+
+.card:hover i {
+    animation: rotate 1s forwards;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 .card:hover {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-.card:hover, .check-mark {
+.card:hover .check-mark {
     opacity: 1;
-    -webkit-animation: 1s linear 0s slide;
-    animation: 1s linear 0s slide;
+    transform: translateX(0%);
+    
 }
 
-@keyframes slide {
-    0% {
-        background: transparent;
-    }
-
-
-    25% {
-        background-image: linear-gradient(to left,
-                  #99e2d0 10%,
-                  transparent 20%);
-    }
-
-    50% {
-        background-image: linear-gradient(to left,
-                  #99e2d0 12%,
-                  transparent 20%);
-    }
-
-    75% {
-        background-image: linear-gradient(to left,
-                  #99e2d0 17%,
-                  transparent 20%);
-    }
-
-     75% {
-        background-image: linear-gradient(to left,
-                  #99e2d0 20%,
-                  transparent 20%);
-    }
-}
 
 .card h3 {
     font-size: 15px;
@@ -205,28 +208,6 @@ footer a:hover {
 
 .footer-row2 {
     padding-bottom: 15px;
-}
-
-.check-mark {
-    height: 55px;
-    width: 46px;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    border-radius: 5px;
-    position: absolute;
-    top: -2px;
-    right: -1%; 
-    
-}
-
-@-webkit-keyframes check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 
