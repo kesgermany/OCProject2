@@ -87,6 +87,7 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .card:nth-child(2) {
@@ -252,8 +253,6 @@ footer a:hover {
 .card-containerdessert {
     margin-bottom: 5%;
 }
-
-
 
 
 @media only screen and (min-width: 768px) {
