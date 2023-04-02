@@ -177,6 +177,9 @@ body {
 .card-description {
     width: 90%;
     padding: 15px 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card-description p {
@@ -184,7 +187,7 @@ body {
 }
 
 .card:hover .card-description {
-    width: 60%;
+    width: 50%;
 }
 
 .card-container, .card-containermaindish, .card-containerdessert {
