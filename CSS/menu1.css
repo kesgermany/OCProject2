@@ -110,7 +110,7 @@ body {
 
 .check-mark {
     background: #99e2d0;
-    width: 0;
+    width: 20%;
     color: white;
     display: flex;
     justify-content: center;
@@ -175,7 +175,7 @@ body {
 }
 
 .card-description {
-    width: 90%;
+    width: 70%;
     padding: 15px 25px;
 }
 
@@ -187,6 +187,9 @@ body {
 
 .card:hover .card-description {
     width: 50%;
+}
+
+.card:hover p {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
